@@ -7,7 +7,7 @@ name_prefix         = "ccmsclone"
 unique_suffix       = "01"
 
 sql_admin_login = "sqladminuser"
-sql_admin_password = "SQL_ADMIN_PASSWORD"
+sql_admin_password = "CcmsClone@2026!Db"
 # Do not put sql_admin_password in this committed file.
 # In PowerShell, set it for the current session instead:
 #   $env:TF_VAR_sql_admin_password = "Use-A-Strong-Secret-Here!"
