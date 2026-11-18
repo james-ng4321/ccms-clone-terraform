@@ -1,5 +1,4 @@
 # Replace with the Azure subscription selected by `az account set`.
-#  $env:subscription_id = 
 
 location            = "East Asia"
 resource_group_name = "rg-ccms-clonetest-01"
@@ -7,7 +6,7 @@ name_prefix         = "ccmsclone"
 unique_suffix       = "01"
 
 sql_admin_login    = "sqladminuser"
-#  $env:sql_admin_password = 
+
 # Do not put sql_admin_password in this committed file.
 # In PowerShell, set it for the current session instead:
 #   $env:TF_VAR_sql_admin_password = "Use-A-Strong-Secret-Here!"
