@@ -8,7 +8,7 @@ This corrected template uses valid multiline HCL throughout, including every blo
 
    ```powershell
    az login
-   az account set --subscription "1a258af3-6552-4e9d-a3fc-182fd665ccd6"
+   az account set --subscription "xxxxxxxxxxxxxxxxxxx"
    ```
 
 2. Review `terraform.tfvars`. Change `resource_group_name` there if required.
