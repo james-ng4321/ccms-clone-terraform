@@ -50,3 +50,9 @@ jobs:
         run: |
           terraform plan -no-color -out=tfplan 2>&1 | tee terraform-plan.txt
           exit ${PIPESTATUS[0]}
+
+      - name: Terraform Apply
+        env:
+          TF_VAR_subscription_id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          TF_VAR_sql_admin_password: ${{ secrets.SQL_ADMIN_PASSWORD }}
+        run: terraform apply -auto-approve tfplan
