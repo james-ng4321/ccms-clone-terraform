@@ -48,3 +48,9 @@ jobs:
           TF_VAR_subscription_id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
           TF_VAR_sql_admin_password: ${{ secrets.SQL_ADMIN_PASSWORD }}
         run: terraform plan -out=tfplan
+        
+      - name: Terraform Apply
+        env:
+          TF_VAR_subscription_id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          TF_VAR_sql_admin_password: ${{ secrets.SQL_ADMIN_PASSWORD }}
+        run: terraform apply -auto-approve tfplan
