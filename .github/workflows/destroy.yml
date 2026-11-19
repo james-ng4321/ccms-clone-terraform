@@ -40,8 +40,8 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      - name: Force Unlock Terraform State
-        run: terraform force-unlock -force 4bbda0cb-3e46-a465-618f-8966760c23d7
+      #- name: Force Unlock Terraform State
+      #  run: terraform force-unlock -force 4bbda0cb-3e46-a465-618f-8966760c23d7
 
       - name: Show Terraform State
         run: terraform state list
