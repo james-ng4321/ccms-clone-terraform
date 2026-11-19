@@ -117,3 +117,21 @@ variable "tags" {
     Application = "CCMS"
   }
 }
+variable "apim_name" {
+  type    = string
+  default = "apim-ccms-clonetest-01"
+}
+
+variable "apim_publisher_name" {
+  type    = string
+  default = "CCMS"
+}
+
+variable "apim_publisher_email" {
+  type = string
+}
+
+variable "apim_sku_name" {
+  type    = string
+  default = "Consumption_0"
+}
