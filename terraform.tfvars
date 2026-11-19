@@ -29,3 +29,9 @@ tags = {
   ManagedBy   = "Terraform"
   Application = "CCMS"
 }
+
+apim_name            = "apim-ccms-clonetest-01"
+apim_publisher_name  = "CCMS"
+apim_publisher_email = "jamesng@kbquest.com"
+
+apim_sku_name = "Consumption_0"
